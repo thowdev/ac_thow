@@ -1,6 +1,8 @@
 ---
 # defaults file for git_repo_manager
-
+################################################################################
+# Prefered/Possible host_vars
+#
 git_base_dir: "/tmp"
 
 git_repo_symlinks: "git_repository_symlinks"
@@ -16,6 +18,9 @@ git_dir_symlinks:
   - src: "{{ git_dirs.git_base_dir_gh_thowdev_forks }}"
     dest: "{{ git_base_dir }}/thowdev-forks"
 
+################################################################################
+# Prefered/Possible group_vars
+#
 git_repositories:
   - name: ac_thow
     repo: "git@github.com:thowdev/ac_thow.git"
